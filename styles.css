@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background: black;
+    color: turquoise;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100px;
+}
+
+nav a {
+    display: inline;
+}
+
+li {
+    list-style-type: none;
+}
+
+#welcome-section {
+    height: 100vh;
+    margin-top: 100px;
+}
+
+#projects {
+    display: flex;
+    height: 350px;
+}
+
+.project-tile {
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+}
+
+.project-tile div {
+    width: 200px;
+    height: 200px;
+}
+
+h3 {}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    height: 100px;
+}
