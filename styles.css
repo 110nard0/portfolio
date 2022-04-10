@@ -17,15 +17,17 @@ body {
     padding: 10px;
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     background: var(--body-colour);
     color: var(--text-colour);
+    font-family: 'Source Code Pro', monospace;
 }
 
 header {
     position: fixed;
     top: 0;
     left: 0;
-    height: 75px;
+    height: 60px;
     width: 100%;
     background: var(--background-colour);
 }
@@ -40,12 +42,12 @@ header {
 nav li {
     display: inline-block;
     list-style-type: none;
-    margin: 20px;
+    margin: 15px;
 }
 
 nav a {
     text-decoration: none;
-    padding: 20px;
+    padding: 10px;
     font-size: 1.75rem;
     color: white;
 }
@@ -54,18 +56,15 @@ nav a {
     height: 100vh;
     margin-top: 125px;
     padding: 25px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
 
 h1 {
-    font-size: 6rem;
     margin-bottom: 10px;
-}
-
-h1::after {
-    content: ". .";
-    position: relative;
-    top: 12.5px;
-    left: -317.5px;
+    font-size: 6rem;
+    margin-left: 40px;
 }
 
 div>h2 {
@@ -79,7 +78,7 @@ div>p {
 }
 
 hr {
-    margin: 5px 0;
+    margin: 10px 0;
 }
 
 #projects {
@@ -108,8 +107,8 @@ section>p {
 }
 
 .project-tile {
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
     margin: 20px;
     text-align: center;
     cursor: not-allowed;
@@ -140,20 +139,24 @@ a {
     justify-content: space-evenly;
 }
 
-.profile-link {
+.connect-link {
+    position: relative;
+    top: -18px;
     padding: 5px;
 }
 
 #footer {
+    width: 100%;
     position: fixed;
     bottom: 0;
     right: 0;
-    height: 100px;
+    height: 50px;
+    background: #111;
 }
 
 footer>div {
     float: right;
-    margin: 5px;
+    margin: 15px;
 }
 
 footer a {
