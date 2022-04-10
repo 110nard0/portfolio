@@ -14,7 +14,6 @@ html {
 }
 
 body {
-    min-width: 400px;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -52,6 +51,10 @@ nav a {
     color: #fff;
 }
 
+section {
+    min-width: 400px;
+}
+
 #welcome-section {
     height: 100vh;
     margin-top: 125px;
@@ -75,7 +78,8 @@ div>p {
     font-size: 2rem;
 }
 
-#hero h2, #hero p {
+#hero h2,
+#hero p {
     margin-left: 40px;
 }
 
@@ -84,7 +88,6 @@ hr {
 }
 
 #projects {
-    height: 75vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -101,9 +104,10 @@ section>p {
 }
 
 #projects-container {
+    padding: 20px;
+    margin: 50px 0 125px;
     display: flex;
     flex-flow: row wrap;
-    padding: 20px;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -128,12 +132,11 @@ a {
 }
 
 #contact {
-    height: 75vh;
-    margin: 50px 0 100px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     text-align: center;
+    padding: 20px;
 }
 
 #contact h2 {
@@ -143,10 +146,16 @@ a {
 #connect {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
+    padding: 20px;
+    margin: 50px 0 150px;
 }
 
 .connect-link {
+    margin: 50px;
+}
+
+.contact-link {
     position: relative;
     top: -18px;
     padding: 5px;
@@ -170,4 +179,19 @@ footer a {
     padding: 5px;
     font-size: 1.5rem;
     color: #eee;
+}
+
+@media screen and (max-width: 680px) {
+    #welcome-section {
+        height: ;
+    }
+
+    #project {
+        height: px;
+        margin-bottom: ;
+    }
+
+    #contact {
+        height: ;
+    }
 }
