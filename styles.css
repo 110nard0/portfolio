@@ -94,6 +94,10 @@ section>h2 {
     margin: 10px auto;
 }
 
+section>p {
+    font-size: 2rem;
+}
+
 #projects-container {
     display: flex;
     flex-flow: row wrap;
@@ -106,14 +110,13 @@ section>h2 {
 .project-tile {
     height: 300px;
     width: 300px;
-    margin: 10px;
+    margin: 20px;
     text-align: center;
     cursor: not-allowed;
 }
 
 h3 {
     font-size: 3rem;
-    cursor: pointer;
 }
 
 a {
@@ -124,11 +127,36 @@ a {
 }
 
 #contact {
-    height: 60vh;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+#connect {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.profile-link {
+    padding: 5px;
 }
 
 #footer {
     position: fixed;
     bottom: 0;
+    right: 0;
     height: 100px;
+}
+
+footer>div {
+    float: right;
+    margin: 5px;
+}
+
+footer a {
+    padding: 5px;
+    font-size: 1.5rem;
 }
