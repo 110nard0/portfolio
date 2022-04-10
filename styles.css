@@ -27,24 +27,27 @@ header {
     left: 0;
     height: 75px;
     width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
     background: var(--background-colour);
 }
 
-nav ul {}
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: center;
+}
 
 nav li {
-    display: inline;
+    display: inline-block;
     list-style-type: none;
     margin: 20px;
 }
 
 nav a {
     text-decoration: none;
-    padding: 10px;
+    padding: 20px;
     font-size: 1.75rem;
+    color: white;
 }
 
 #welcome-section {
@@ -54,49 +57,74 @@ nav a {
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 6rem;
     margin-bottom: 10px;
 }
 
 h1::after {
     content: ". .";
     position: relative;
-    top: 12px;
-    left: -264.5px;
+    top: 12.5px;
+    left: -317.5px;
 }
 
-h2 {
-    font-size: 3rem;
+div>h2 {
+    font-size: 4rem;
+    margin-left: 40px;
+}
+
+div>p {
+    font-size: 2rem;
+    margin-left: 40px;
+}
+
+hr {
+    margin: 5px 0;
 }
 
 #projects {
     display: flex;
     flex-direction: column;
-    height: 500px;
+    height: 100vh;
+}
+
+section>h2 {
+    font-size: 4rem;
+    text-align: center;
+    margin: 10px auto;
 }
 
 #projects-container {
     display: flex;
-    
+    flex-flow: row wrap;
+    height: 100vh;
+    padding: 20px;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .project-tile {
-    height: 150px;
-    width: 150px;
+    height: 300px;
+    width: 300px;
     margin: 10px;
-    text-align: end;
+    text-align: center;
+    cursor: not-allowed;
 }
 
-.project-tile div {
-    width: 200px;
-    height: 200px;
+h3 {
+    font-size: 3rem;
+    cursor: pointer;
 }
-
-h3 {}
 
 a {
     color: var(--text-colour);
     text-decoration: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#contact {
+    height: 60vh;
 }
 
 #footer {
