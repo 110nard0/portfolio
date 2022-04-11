@@ -29,14 +29,23 @@ header {
     left: 0;
     height: 60px;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
     background: var(--background-colour);
 }
 
 #navbar {
+    right: 0;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-content: center;
+}
+
+header div {
+    width: 5%;
+    color: transparent;
+    margin: 3.5px 15px;
 }
 
 nav li {
@@ -47,7 +56,7 @@ nav li {
 
 nav a {
     text-decoration: none;
-    padding: 10px;
+    padding: 20px;
     font-size: 1.75rem;
     color: #fff;
 }
@@ -234,11 +243,15 @@ footer a {
 }
 
 @media screen and (max-width: 500px) {
-    hr { margin: 10px 10px 10px 0}
+    header div { margin: 3.5px 7.5px; }
     
-    h1 {font-size: 5rem;}
+    nav a { padding: 2px;}
+    
+    hr { margin: 10px 10px 10px 0 }
+    
+    h1 { font-size: 5rem; }
 
-    h2 {font-size: 3rem!important;}
+    h2 { font-size: 3rem!important; }
 
-    h3 {font-size: 2rem}
+    h3 { font-size: 2rem; }
 }
