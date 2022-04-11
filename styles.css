@@ -5,6 +5,7 @@
 }
 
 html {
+    width: 100vw;
     scroll-behavior: smooth;
     font-size: 10px;
     line-height: 1.6;
@@ -52,7 +53,7 @@ nav a {
 }
 
 section {
-    min-width: 400px;
+    min-width: 350px;
 }
 
 #welcome-section {
@@ -105,7 +106,7 @@ section>p {
 
 #projects-container {
     padding: 20px;
-    margin: 50px 0 125px;
+    margin: 75px 0 200px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
@@ -131,12 +132,25 @@ a {
     cursor: pointer;
 }
 
+h3>a:hover, .contact-link:hover {
+    background: var(--text-colour);
+    color: var(--body-colour);
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 2px #cff09e, -1px -1px 2px 2px #cff09e;
+}
+
 #contact {
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    text-align: center;
     padding: 20px;
+}
+
+#contact div {
+    text-align: center;
 }
 
 #contact h2 {
@@ -147,12 +161,14 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    text-align: center;
     padding: 20px;
-    margin: 50px 0 150px;
+    margin: 50px 0 250px;
 }
 
 .connect-link {
-    margin: 50px;
+    margin: 20px;
+    padding: 5px;
 }
 
 .contact-link {
@@ -182,16 +198,47 @@ footer a {
 }
 
 @media screen and (max-width: 680px) {
+    .connect-link>img {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
     #welcome-section {
-        height: ;
+        padding: 10px;
+    }
+    
+    h1, #hero h2, #hero p {
+        margin-left: 10px;
     }
 
-    #project {
-        height: px;
-        margin-bottom: ;
+    #projects {
+        padding: 10px;    
     }
 
+    #projects-container {
+        padding: 10px;
+    }
+    
     #contact {
-        height: ;
+        padding: 10px;
     }
+
+    #connect {
+        padding: 10px;
+    }
+
+    .connect-link {
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    hr { margin: 10px 10px 10px 0}
+    
+    h1 {font-size: 5rem;}
+
+    h2 {font-size: 3rem!important;}
+
+    h3 {font-size: 2rem}
 }
