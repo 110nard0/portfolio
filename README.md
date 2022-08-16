@@ -1,6 +1,6 @@
-# Portfolio
+# Portfolio Site
 
-This is a portfolio that was created as part of the requirements to obtain the freeCodeCamp Responsive Web Design certification.
+This is a personal portfolio webpage that was created as part of the requirements to obtain the freeCodeCamp Responsive Web Design certification.
 
 It was built using plain HTML and CSS as specified in the guide.
 
